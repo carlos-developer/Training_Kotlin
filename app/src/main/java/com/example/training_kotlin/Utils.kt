@@ -1,35 +1,9 @@
 package com.example.training_kotlin
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.training_kotlin.databinding.ActivityMainBinding
+import com.example.training_kotlin.model.User
 
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var userAdapter: UserAdapter
-    private val linearLayoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
-
-    private lateinit var binding: ActivityMainBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        /** Lista añadida para probar el funcionamiento del adaptador*/
-
-        /**------------------------------------------------------------*/
-
-        userAdapter = UserAdapter(getUsers())
-        binding.recyclerViewUser.apply {
-            layoutManager = linearLayoutManager
-            adapter = userAdapter
-        }
-    }
-
-    private fun getUsers(): List<User> {
+object Utils {
+    fun getUsers(): List<User> {
         return listOf(
             User(
                 1,
