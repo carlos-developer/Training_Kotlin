@@ -2,4 +2,5 @@
     <string name="app_name">Training_Kotlin</string>
     <string name="layout_item_user_tv_order_text">1</string>
     <string name="layout_item_user_tv_name_text">Nombre Completo</string>
+    <string name="layout_item_user_tv_name_description">Imagen del usuario</string>
 </resources>
