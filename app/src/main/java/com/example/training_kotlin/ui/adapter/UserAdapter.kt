@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.training_kotlin.R
-import com.example.training_kotlin.databinding.LayoutItemUserBinding
+import com.example.training_kotlin.databinding.LayoutItemUserAltBinding
 import com.example.training_kotlin.model.User
 import com.squareup.picasso.Picasso
 
@@ -22,7 +22,7 @@ class UserAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         context = parent.context
         layout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.layout_item_user, parent, false)
+            .inflate(R.layout.layout_item_user_alt, parent, false)
         return ViewHolder(layout)
     }
 
@@ -42,7 +42,7 @@ class UserAdapter(
     override fun getItemCount(): Int = users.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val binding = LayoutItemUserBinding.bind(itemView)
+        val binding = LayoutItemUserAltBinding.bind(itemView)
 
         fun setListener(user: User, position: Int) {
             binding.root.setOnClickListener { onClickListener.onCLick(user, position) }

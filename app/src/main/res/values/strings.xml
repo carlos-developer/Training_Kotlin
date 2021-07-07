@@ -3,4 +3,10 @@
     <string name="layout_item_user_tv_order_text">1</string>
     <string name="layout_item_user_tv_name_text">Nombre Completo</string>
     <string name="layout_item_user_tv_name_description">Imagen del usuario</string>
+    <string name="sp_firstTime">first_time</string>
+    <string name="dialog_title">Registrar Usuario</string>
+    <string name="dialog_confirm">Confirmar Usuario</string>
+    <string name="user_name">Nombre de usuario</string>
+    <string name="helper_user_name">Obligatorio</string>
+    <string name="sp_user_name">user_name</string>
 </resources>
