@@ -28,6 +28,5 @@ class UserAdapter(private val users: List<User>) : RecyclerView.Adapter<UserAdap
 
     inner class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         val binding = LayoutItemUserBinding.bind(itemView)
-
     }
 }
